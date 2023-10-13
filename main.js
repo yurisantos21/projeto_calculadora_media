@@ -8,7 +8,7 @@ form.addEventListener('submit', function(e){
 	let linha = '<tr>';
 	let linha += `<td>${inputNomeAtividade.value}</td>`;
 	let linha += `<td>${inputNotaAtividade.value}</td>`;
-	let linha += `<td>${inputNotaAtividade.value >= 7 ? 'Aprovado' ; 'Reprovado'}</td>`;
+	let linha += `<td>${inputNotaAtividade.value >= 7 ? 'Aprovado' : 'Reprovado'}</td>`;
 	let linha += '</tr>';
 
 	const corpoTabela = document.querySelector('tbody');
